@@ -3,7 +3,7 @@
 The plugin add command to hat your hand item.  
 Tested in: 1.12.2
 
-Page : 
+Page : https://www.spigotmc.org/resources/hat-block.96219/
 
 ## Usage
 
