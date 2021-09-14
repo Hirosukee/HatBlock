@@ -4,3 +4,6 @@ main: hirosuke.hatblock.HatBlock
 prefix: HatBlock
 authors: [ Hirosuke ]
 description: The plugin add command to hat your hands.
+commands:
+  hat:
+    description: Hat your handing item.
