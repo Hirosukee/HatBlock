@@ -1,4 +1,4 @@
-# HatBlock
+# Hat Block
 
 The plugin add command to hat your hand item.  
 Tested in: 1.12.2
