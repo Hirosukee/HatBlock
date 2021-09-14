@@ -1,7 +1,7 @@
 # Hat Block
 
 The plugin add command to hat your hand item.  
-Tested in: 1.12.2
+Worked in: 1.12
 
 Page : https://www.spigotmc.org/resources/hat-block.96219/
 
