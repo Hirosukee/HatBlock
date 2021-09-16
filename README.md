@@ -5,6 +5,8 @@ If you have a problem, you can get support in [my discord server](https://discor
 
 Worked in: 1.9 1.10 1.11 1.12 1.13 1.14 1.15 1.16
 
+Page : https://www.spigotmc.org/resources/hat-block.96219/
+
 ## Commands
 {} is a optional argument.
 
