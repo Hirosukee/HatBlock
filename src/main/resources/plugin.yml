@@ -3,7 +3,7 @@ version: '${version}'
 main: hirosuke.hatblock.HatBlock
 prefix: HatBlock
 authors: [ Hirosuke ]
-description: The plugin add command to hat your hands.
+description: Hat your hands item.
 commands:
   hat:
     description: Hat your handing item.

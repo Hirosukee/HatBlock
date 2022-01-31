@@ -6,7 +6,7 @@ class HatBlock : JavaPlugin() {
 
         @Override
         override fun onEnable() {
-                getCommand("hat").setExecutor(CommandHatBlock())
+                getCommand("hat").executor = CommandHatBlock()
                 logger.info("plugin has loaded.")
         }
 
