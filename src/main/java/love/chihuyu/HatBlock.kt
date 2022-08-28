@@ -16,6 +16,6 @@ class HatBlock : JavaPlugin(), Listener {
 
     override fun onEnable() {
         server.pluginManager.registerEvents(this, this)
-        Hat.register()
+        this.getCommand("hat")!!.setExecutor(Hat)
     }
 }
