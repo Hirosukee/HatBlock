@@ -1,9 +1,15 @@
 name: HatBlock
-version: '${version}'
-main: hirosuke.hatblock.HatBlock
-prefix: HatBlock
+version: '1.0.0'
+main: love.chihuyu.HatBlock
+api-version: 1.19
 authors: [ Hirosuke ]
-description: Hat your hands item.
 commands:
   hat:
-    description: Hat your handing item.
+    permission: hatblock.cmd.hat
+permissions:
+  hatblock.cmd.*:
+    default: op
+    children:
+      hatblock.cmd.hat: true
+  hatblock.cmd.hat:
+    default: true
