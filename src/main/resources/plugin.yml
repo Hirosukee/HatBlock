@@ -2,15 +2,14 @@ name: HatBlock
 version: '1.0.0'
 main: love.chihuyu.HatBlock
 authors: [ Hirosuke ]
+prefix: Hat
 commands:
   hat:
-    permission: hatblock.cmd.hat
-    aliases:
-      - hatblock
+    permission: hatblock.hat
 permissions:
-  hatblock.cmd.*:
+  hatblock.*:
     default: op
     children:
-      hatblock.cmd.hat: true
-  hatblock.cmd.hat:
+      - hatblock.hat
+  hatblock.hat:
     default: true

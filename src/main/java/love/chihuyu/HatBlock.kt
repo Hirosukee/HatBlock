@@ -15,7 +15,12 @@ class HatBlock : JavaPlugin(), Listener {
     }
 
     override fun onEnable() {
+        logger.info("plugin has loaded.")
         server.pluginManager.registerEvents(this, this)
-        this.getCommand("hat")!!.setExecutor(Hat)
+        Hat.register()
+    }
+
+    override fun onDisable() {
+        logger.info("plugin has unloaded.")
     }
 }

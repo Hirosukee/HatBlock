@@ -1,39 +1,29 @@
 package love.chihuyu.commands.impl
 
-import org.bukkit.ChatColor
-import org.bukkit.command.Command
-import org.bukkit.command.CommandExecutor
+import love.chihuyu.commands.Command
+import net.md_5.bungee.api.ChatColor
 import org.bukkit.command.CommandSender
-import org.bukkit.command.TabCompleter
 import org.bukkit.entity.Player
 
-object Hat : CommandExecutor, TabCompleter {
+object Hat : Command("hat") {
 
-    override fun onCommand(
-        sender: CommandSender,
-        command: Command,
-        commandLabel: String,
-        args: Array<out String>
-    ): Boolean {
-        if (sender !is Player || sender.hasPermission("hatblock.cmd.hat")) return true
+    override fun onCommand(sender: CommandSender, label: String, args: Array<out String>) {
+        if (sender !is Player) return
 
         val helmet = sender.inventory.helmet
+        val hand = sender.inventory.itemInMainHand
+        sender.inventory.helmet = hand
+        sender.inventory.itemInMainHand.amount = 0
         if (helmet != null) sender.inventory.addItem(helmet)
-        sender.inventory.helmet = sender.inventory.itemInMainHand
-        sender.sendMessage("" +
-                "${ChatColor.getByChar("#ffafbd")}§l§n§oH" +
-                "${ChatColor.getByChar("#ffa0b4")}§l§n§oa" +
-                "${ChatColor.getByChar("#ffb9aa")}§l§n§ot" +
-                "${ChatColor.getByChar("#ffc3a0")}§l§n§o!")
-        return true
+        sender.sendMessage(
+                "${ChatColor.of("#3AFFFF")}§l§oa" +
+                "${ChatColor.of("#ABFFFF")}§l§ot" +
+                "${ChatColor.of("#00FFFF")}§l§oH" +
+                "${ChatColor.of("#E1FFFF")}§l§o!")
+        return
     }
 
-    override fun onTabComplete(
-        sender: CommandSender,
-        command: Command,
-        label: String,
-        args: Array<out String>,
-    ): MutableList<String>? {
+    override fun onTabComplete(sender: CommandSender, alias: String, args: Array<out String>): List<String> {
         return mutableListOf()
     }
 }
