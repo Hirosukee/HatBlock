@@ -5,5 +5,5 @@ Hat your hand item.
 * `/hat` Hat!
 
 ## Permissions
-* `hatblock.cmd.*` use all commands.
-* `hatblock.cmd.hat` use /hat command.
+* `hatblock.*` include all nodes.
+* `hatblock.hat` use /hat command.
