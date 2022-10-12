@@ -1,5 +1,5 @@
 name: HatBlock
-version: '1.0.0'
+version: '1.0.1'
 main: love.chihuyu.HatBlock
 authors: [ Hirosuke ]
 prefix: Hat
