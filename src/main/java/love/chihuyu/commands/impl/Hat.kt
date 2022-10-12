@@ -15,11 +15,7 @@ object Hat : Command("hat") {
         sender.inventory.helmet = hand
         sender.inventory.itemInMainHand.amount = 0
         if (helmet != null) sender.inventory.addItem(helmet)
-        sender.sendMessage(
-                "${ChatColor.of("#3AFFFF")}§l§oa" +
-                "${ChatColor.of("#ABFFFF")}§l§ot" +
-                "${ChatColor.of("#00FFFF")}§l§oH" +
-                "${ChatColor.of("#E1FFFF")}§l§o!")
+        sender.sendMessage("Hat!")
         return
     }
 
